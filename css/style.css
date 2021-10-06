@@ -16,7 +16,7 @@ font-family: 'Roboto', sans-serif; */
 
 .eclipse {
     background-color: rgba(26, 25, 21, 0.35);
-    min-height: 540px;
+    /* min-height: 540px; */
     color: #fff;
 }
 
@@ -62,8 +62,6 @@ header {
 }
 
 .title {
-    font-size: 30px;
-    line-height: 36px;
     text-transform: uppercase;
     text-align: center;
     margin: 0px;
@@ -72,8 +70,6 @@ header {
 .title-span {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 18px;
-    line-height: 22px;
     text-align: center;
     display: block;
 }
@@ -88,7 +84,6 @@ header {
     color: #fff;
     font-size: 14px;
     height: 40px;
-    width: 280px;
 }
 
 .partner-title {
@@ -180,7 +175,6 @@ header {
     color: #ff4e50;
     font-size: 14px;
     height: 40px;
-    width: 280px;
 }
 
 @media (max-width: 767px) {
@@ -196,16 +190,22 @@ header {
     }
     .title {
         margin-bottom: 19px;
+        font-size: 30px;
+        line-height: 36px;
     }
     .title-span {
         margin-bottom: 18px;
+        font-size: 18px;
+        line-height: 22px;
     }
-    .container {
+    .container,
+    .container-partner {
         width: 294px;
         margin: 0 auto;
     }
     .eclipse {
         margin-bottom: 72px;
+        min-height: 540px;
     }
     .partner-title {
         margin-bottom: 18px;
@@ -220,5 +220,69 @@ header {
     }
     .button-partners {
         margin-bottom: 57px;
+        width: 280px;
+    }
+    .find {
+        width: 280px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container,
+    .container-partner {
+        width: 510px;
+        margin: 0 auto;
+    }
+    .logo-nav {
+        width: 680px;
+        padding-top: 50px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 140px;
+    }
+    .title-span {
+        margin-bottom: 38px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .eclipse {
+        margin-bottom: 72px;
+        min-height: 720px;
+    }
+    .title {
+        margin-bottom: 19px;
+        font-size: 52px;
+        line-height: 62px;
+    }
+    .find {
+        width: 230px;
+    }
+    .partner-list {
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+    .partner-title {
+        margin-bottom: 35px;
+    }
+    .button-partners {
+        margin-bottom: 40px;
+        width: 190px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 942px) {
+    .partner-items:not(:nth-last-child(-n+2)) {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 943px) {
+    .logo-nav,
+    .container-partner {
+        width: 942px;
+    }
+    .button-partners {
+        margin-bottom: 72px;
     }
 }
